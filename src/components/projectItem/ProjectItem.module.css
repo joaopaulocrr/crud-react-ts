@@ -1,0 +1,30 @@
+.divButtonContainer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 95%;
+    gap: .5rem;
+}
+
+.liProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px;
+    color: black;
+    background-color: rgb(206, 202, 202);
+    width: 300px;
+    overflow-wrap: break-word;
+    border-radius: 15px;
+}
+
+.projectTitlle {
+    margin: 0;
+}
+
+.buttonEditar {
+    background-color: green;
+}
+.buttonExcluir {
+    background-color: rgb(138, 2, 2);
+    box-shadow: black 3px 3px 10px;
+}

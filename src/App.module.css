@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+input {
+    padding: 8px;
+    border-radius: 10px;
+    
+}

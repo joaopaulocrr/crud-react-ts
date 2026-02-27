@@ -1,0 +1,26 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.containerForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    background-color: rgba(116, 73, 124, 0.582);
+    padding-bottom: 1em;
+    border-radius: 20px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid rgba(173, 172, 172, 0.281);
+    border-radius: 15px;
+    padding: 20px;
+    width: 70%;
+}
