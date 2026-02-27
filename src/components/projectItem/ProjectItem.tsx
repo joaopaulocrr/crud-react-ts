@@ -24,8 +24,6 @@ const ProjectItem = ({
  
 }: ProjectItemProps) => {
 
-  // const projetoSendoEditado =
-
   return (
     <li key={projeto.id} className={styles.liProject}>
       <h3 className={styles.projectTitlle}>{projeto.nome}: </h3>

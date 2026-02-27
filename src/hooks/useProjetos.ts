@@ -25,14 +25,14 @@ export const useProjetos = () => {
     setListaProjetos(novaLista);
   }
 
-   function selecionarParaEditar(projeto: Projeto) {
+  function selecionarParaEditar(projeto: Projeto) {
     setProjetoEmEdicao(projeto);
   }
 
 
-  function cancelarEdicao():void {
+  function cancelarEdicao(): void {
     setProjetoEmEdicao(null)
-    
+
   }
 
   function atualizarProjetoEditado(projetoEditado: Projeto) {

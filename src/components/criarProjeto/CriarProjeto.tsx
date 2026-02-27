@@ -21,8 +21,6 @@ const CriarProjeto = ({
   projetoEmEdicao
 }: criarProjetoProps) => {
 
-
-
   return (
     <section className={styles.section}>
       <div className={styles.containerForm}>
