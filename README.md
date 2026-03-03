@@ -1,75 +1,103 @@
-<<<<<<< HEAD
-# React + TypeScript + Vite
+# 📋 CRUD de Projetos - React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Sobre o Projeto
 
-Currently, two official plugins are available:
+Aplicação web desenvolvida para gerenciamento de projetos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O sistema permite criar, editar, concluir e remover projetos, com persistência de dados utilizando LocalStorage.
 
-## React Compiler
+O objetivo principal foi praticar organização de componentes, tipagem com TypeScript e gerenciamento de estado no React.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React
+- TypeScript
+- Vite
+- CSS modules
+- LocalStorage
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- Git para versionamento
+- Github para hospedagem
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 🏗️ Arquitetura
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+O projeto foi estruturado com:
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Componentes separados para função única
+- Separação de responsabilidades
+- Custom Hook (`useProjetos`) para centralizar regras de negócio
+- Elevação de estado (lifting state up)
+- Comunicação entre componentes via props
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Essa organização facilita manutenção e escalabilidade.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-=======
+---
+
+## ✨ Funcionalidades
+
+- ✅ Criar novo projeto
+- ✏️ Editar projeto existente
+- ❌ Cancelar edição
+- ✔️ Marcar projeto como concluído
+- 🗑️ Remover projeto
+- 💾 Persistência automática no navegador
+
+---
+
+## ⚙️ Como Executar o Projeto
+
+Clone o repositório:
+
+```bash
+git clone https://github.com/joaopaulocrr/crud-react-ts.git
+
+Entre na pasta do projeto:
+
+cd crud-react-ts
+
+Instale as dependências:
+
+npm install
+
+Execute o projeto:
+
+npm run dev
+
+O projeto estará disponível em:
+http://localhost:5173
+
+🧠 Aprendizados
+
+Neste projeto pratiquei:
+
+Gerenciamento de estado com useState
+
+Uso de useEffect para persistência
+
+Criação de Custom Hooks
+
+Tipagem forte com TypeScript(incluindo criação de interfaces)
+
+Fluxo de edição com controle de estado
+
+Organização de projeto com Vite
+
+👨‍💻 Autor
+
+João Paulo
+GitHub: https://github.com/joaopaulocrr
+
+LinkedIn: https://www.linkedin.com/in/dev-joao-paulo/
+
+
+
+```markdown
+## 🔮 Melhorias Futuras
+
+- Implementar Context API para evitar prop drilling(No caso de o projeto crescer e se tornar necessário)
+- Adicionar autenticação por usuário
+- Melhorar UI/UX
+- Adicionar testes automatizados
